@@ -10,3 +10,16 @@
     display: inline-block;
   }
 }
+
+#welcome-heading {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 10rem;
+  color: $font;
+  font-family: 'Comfortaa', cursive;
+  text-shadow: .2rem .2rem $background;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
