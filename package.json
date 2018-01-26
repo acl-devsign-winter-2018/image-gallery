@@ -1,5 +1,5 @@
 {
-  "name": "Travel_App",
+  "name": "hike_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "start": "webpack-dev-server",
     "build": "webpack"
   },
-  "author": "Anwar Montasir",
+  "author": "Grace Provost",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
@@ -28,5 +28,8 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.0"
+  },
+  "dependencies": {
+    "firebase": "^4.9.0"
   }
 }
