@@ -1,6 +1,6 @@
 /* eslint-env node */
 const HtmlPlugin = require('html-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -10,11 +10,11 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [
-    new HtmlPlugin({ template: './src/index.html' })
-    // new CopyWebpackPlugin([
-    //   // in output use images folder
-    //   { from: 'src/components/', to: 'images' }
-    // ])
+    new HtmlPlugin({ template: './src/index.html' }),
+    new CopyWebpackPlugin([
+      // in output use images folder
+      { from: 'src/images', to: 'images' }
+    ])
   ],
   module: {
     rules: [
