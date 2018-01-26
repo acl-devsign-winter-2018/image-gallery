@@ -1,43 +1,14 @@
-Lab: Image Gallery
+Objective
 ===
 
-Pick a topic 
+Create a page that demonstrates use of responsive raster image strategies and vector images. Use principles of responsive typography and make page scan-friendly. Use vanilla JS webpack component architecture. Use CSS grid and flexbox. Use semantic markup.
 
-* :baseball: baseball  
-* :surfer: surfing  
-* :cat2: kittens  
-* :guitar: guitars 
-* :pizza: pizza 
-* (etc.)
+Steps Taken
+===
 
-and create a themed image gallery app based on today's lecture.
+Set up the component architecture. Create an about principles page and splash entry page. Set an event listener on the splash page that will redirect user to about page and show the header and footer. Use a mixture of flexbox and grid to create resposive, scannable layouts. Create multiple (10!) images of the splash page image for different screen sizes and resolutions. Use media queries to apply these responsive changes.
 
-## Requirements
-* Make it responsive, using a combination of CSS Grid and Flexbox.
-* Follow the Webpack component and router architecture we've used on other labs.
-* Choose appropriate UI and navigational patterns based on your app's functionality and goals.
-* Your app should create, update, remove image data using [Firebase](https://firebase.google.com/).
-* [Cloudinary](https://cloudinary.com/documentation/responsive_images) should be used to serve appropriate responsive images.
-* Sketch your responsive layout **and** app component structure before developing.
+Reflection / Changes
+===
 
-See [today's classwork](https://github.com/acl-devsign-winter-2018/classwork/tree/master/14-apps) for notes on working with Firebase and creating App template.
-
-Note that the sketch process doesn't have to end once development begins. If you get stuck, sketch or whiteboard until the answer is clear.
-
-## Submission Instructions
-Submit pull request URL in Canvas, and include a .zip of your sketches.
-
-Include the answers to the following in your submission:
-
-* How long did you spend on this lab?
-* Describe the process you used to complete the lab.
-* What was the hardest and easiest part of the lab?
-
-## Rubric
-* Sketches used to plan out responsive layout **and** app component structure (5 points)
-* App features semantic markup and responsive CSS (5 points)
-* Images and image categories can be created, updated, removed (5 points)
-* Responsive image strategies applied (5 points)
-
-## Stretch goal
-* Explore Cloudinary's [transform features](https://cloudinary.com/documentation/image_transformation_reference) and apply to your application.
+This was my first time trying to manually create responsive images that change depending on screen size and resolution. It is very tedious work, and I can't imaging having to do this manually for more than a couple images at a time! I used a website to resize and crop images (http://resizeimage.net/). SVG images are credited to Wick (http://jameswickham.com/10-symbols/).
