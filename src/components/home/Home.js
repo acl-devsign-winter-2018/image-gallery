@@ -8,6 +8,12 @@ export default class Home {
   render() {
     const dom = template.clone();
 
+    const splash = dom.querySelector('#splash');
+    splash.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.location.hash = '#hikes';
+    });
+
     return dom;
   }
 }

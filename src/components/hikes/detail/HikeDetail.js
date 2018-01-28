@@ -1,6 +1,5 @@
 import Template from '../../Template';
 import html from './hike-detail.html';
-import './hike-detail.css';
 import Images from './Images';
 import { db } from '../../../services/firebase';
 

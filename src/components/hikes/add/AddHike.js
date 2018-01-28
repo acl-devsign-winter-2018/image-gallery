@@ -1,6 +1,5 @@
 import Template from '../../Template';
 import html from './add-hike.html';
-import './add-hike.css';
 import { db } from '../../../services/firebase';
 
 const template = new Template(html);
