@@ -1,17 +1,19 @@
-$font: #EEE5E9;
-$background: #080705;
-$headfoot: #C4560D;
+$splash-font: #EEE5E9;
+$splash-background: #080705;
+
+
+$headfoot: #22CA37;
 $box: #19180A;
 
-$header-font: 'Playfair Display', serif;
+$header-font: 'Comfortaa', sans-serif;
 $content-padding: .5rem 1rem;
 
 
 /* RESPONSIVE TYPOGRAPHY VALUES, SPECIFY WITHOUT PX
    https://www.smashingmagazine.com/2016/05/fluid-typography/ */
-$minFontVal: 18;
+$minFontVal: 20;
 $maxFontVal: 24;
-$minViewportVal: 480;
+$minViewportVal: 450;
 $maxViewportVal: 1400;
 
 $minFontSize: $(minFontVal)px;

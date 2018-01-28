@@ -14,14 +14,14 @@ export default class Hike {
   }
 
   update(hike) { //TODO: update to hike stuff (hike.location)
-    this.caption.textContent = `${hike.name} at ${hike.location}`;
+    this.caption.textContent = `${hike.name}: ${hike.location}`;
     this.image.alt = hike.name;
   }
 
   render() {
     const dom = template.clone();
     dom.querySelector('a').href = `#hikes/${this.key}`;
-    this.caption = dom.querySelector('h2');
+    this.caption = dom.querySelector('figcaption');
     this.image = dom.querySelector('img');
 
     this.update(this.hike);
