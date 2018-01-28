@@ -1,6 +1,5 @@
 import Template from '../../Template';
 import html from './hike.html';
-import './hike.css';
 import { db } from '../../../services/firebase';
 import { getUrl } from '../../../services/cloudinary';
 
@@ -14,8 +13,8 @@ export default class Hike {
     this.hikeImages = hikesImages.child(key).limitToFirst(1);
   }
 
-  update(hike) {
-    this.caption.textContent = `${hike.name} the ${hike.type}`;
+  update(hike) { //TODO: update to hike stuff (hike.location)
+    this.caption.textContent = `${hike.name} at ${hike.location}`;
     this.image.alt = hike.name;
   }
 
@@ -28,7 +27,7 @@ export default class Hike {
     this.update(this.hike);
     
     this.onValue = this.hikeImages.on('child_added', data => {
-      this.image.src = getUrl(data.val(), 'e_sepia:80,c_scale,w_75');
+      this.image.src = getUrl(data.val(), 'e_sepia:80,c_scale,w_75'); //TODO: change cloudinary settings for uploaded pics
     });
 
     return dom;

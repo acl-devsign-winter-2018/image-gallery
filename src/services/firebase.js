@@ -1,12 +1,12 @@
-import firebase from "firebase";
+import firebase from 'firebase';
 
 var config = {
-  apiKey: "AIzaSyBW3vuwYeQzQ6WvILHZFKc34pWblZ2roOs",
-  authDomain: "themeapp-8b2fe.firebaseapp.com",
-  databaseURL: "https://themeapp-8b2fe.firebaseio.com",
-  projectId: "themeapp-8b2fe",
-  storageBucket: "themeapp-8b2fe.appspot.com",
-  messagingSenderId: "815698127022"
+  apiKey: 'AIzaSyBW3vuwYeQzQ6WvILHZFKc34pWblZ2roOs',
+  authDomain: 'themeapp-8b2fe.firebaseapp.com',
+  databaseURL: 'https://themeapp-8b2fe.firebaseio.com',
+  projectId: 'themeapp-8b2fe',
+  storageBucket: 'themeapp-8b2fe.appspot.com',
+  messagingSenderId: '815698127022'
 };
 
 const firebaseApp = firebase.initializeApp(config);

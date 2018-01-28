@@ -1,6 +1,7 @@
 import html from './hikelist.html';
 import Template from '../../Template';
 import Hike from './Hike';
+import AddHike from '../add/AddHike';
 import { db } from '../../../services/firebase';
 
 const template = new Template(html);
@@ -36,6 +37,8 @@ export default class HikeList {
     this.childChange = hikes.on('child_changed', data => {
       map.get(data.key).component.update(data.val());
     });
+
+    dom.querySelector('#add-hike').appendChild(new AddHike().render()); //TODO: check if correct? must give on add event?
 
     return dom;
   }
