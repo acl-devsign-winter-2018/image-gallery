@@ -16,30 +16,48 @@
 header {
   background-color: $headfoot;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  nav a {
+    color: $splash-font;
+    margin-right: .5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   h1 a {
+    color: $splash-font;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     font-size: $fluidFontSize;
     font-family: $header-font;
   }
-  img {
-    width: 50px;
+  span {
+    display: inline-block;
+    padding: 5px;
   }
 }
 
-main {
-  h1 {
+#main {
+  color: $font;
+  background-color: $background;
+  section {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  #hikes-section {
+    margin-top: 1.5rem;
     font-size: $fluidFontSize;
+    font-family: $header-font;
+    text-align: center;
   }
   .hike-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     list-style: none;
-    justify-content: space-around;
     .hike {
       flex-grow: 1;
+      margin: 1rem auto;
     }
   }
 }
@@ -76,6 +94,7 @@ main {
 }
 
 footer {
+  color: $splash-font;
   text-align: center;
   background-color: $headfoot;
   ul {
@@ -84,6 +103,9 @@ footer {
     list-style: none;
     li {
       margin: .3rem .5rem;
+      a {
+        color: $splash-font;
+      }
     }
   }
 }

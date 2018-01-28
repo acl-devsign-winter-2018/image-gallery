@@ -13,7 +13,7 @@ export default class Hike {
     this.hikeImages = hikesImages.child(key).limitToFirst(1);
   }
 
-  update(hike) { //TODO: update to hike stuff (hike.location)
+  update(hike) {
     this.caption.textContent = `${hike.name}: ${hike.location}`;
     this.image.alt = hike.name;
   }
