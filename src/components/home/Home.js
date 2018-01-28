@@ -16,4 +16,8 @@ export default class Home {
 
     return dom;
   }
+
+  unrender() {
+    window.removeEventListener('hashchange', this.hashChange);
+  }
 }
