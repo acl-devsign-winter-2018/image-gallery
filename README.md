@@ -1,40 +1,15 @@
-Lab: Image Gallery
+Objective
 ===
 
-Pick a topic 
+Make a responsive app, using a combination of CSS Grid and Flexbox. Follow the Webpack component and router architecture with vanilla JS. Choose appropriate UI and navigational patterns based on your app's functionality and goals.
+The app should create, update, and remove image data using Firebase. Cloudinary should be used to serve appropriate responsive images. Sketches of responsive layout and app component structure before developing.
 
-* :baseball: baseball  
-* :surfer: surfing  
-* :cat2: kittens  
-* :guitar: guitars  
-* (etc.)
+Steps Taken
+===
 
-and create a themed image gallery app based on today's lecture.
+Set up the component architecture with html and vanilla JS. Set up firebase and cloudinary accounts. Create splash entry page, hikes list, hike detail, add hike pages. Set an event listener on the splash page that will redirect user to hikes list and show the header and footer. Use a mixture of flexbox and grid to create resposive, scannable layouts. Create multiple (8!) images of the splash page image for different screen sizes and resolutions. Use media queries to apply these responsive changes. Alter the hike list page to display add a hike in larger screens.
 
-## Requirements
-* Make it responsive, using a combination of CSS Grid and Flexbox.
-* Follow the Webpack component and router architecture we've used on other labs.
-* Choose appropriate UI and navigational patterns based on your app's functionality and goals.
-* Your app should write and remove image data using [Firebase](https://firebase.google.com/).
-* [Cloudinary](https://cloudinary.com/documentation/responsive_images) should be used to serve appropriate responsive images.
-* Sketch your responsive layout **and** app component structure before developing.
+Reflection / Changes
+===
 
-Note that the sketch process doesn't have to end once development begins. If you get stuck, sketch or whiteboard until the answer is clear.
-
-## Submission Instructions
-Submit pull request URL in Canvas, and include a .zip of your sketches.
-
-Include the answers to the following in your submission:
-
-* How long did you spend on this lab?
-* Describe the process you used to complete the lab.
-* What was the hardest and easiest part of the lab?
-
-## Rubric
-* Sketches used to plan out responsive layout **and** app component structure (2 points)
-* App features semantic markup and responsive CSS (2 points)
-* Images and image categories can be added, removed, updated (4 points)
-* Responsive image strategies applied (2 points)
-
-## Stretch goal
-* Explore Cloudinary's [transform features](https://cloudinary.com/documentation/image_transformation_reference) and apply to your application.
+This was a large project to create. This was my first time working with cloudinary and firebase. I enjoy the instantaneous feedback a user gets when adding or removing an image. I regret creating a single CSS folder to hold all my CSS. I now see that with a larger app like this with multiple pages / components it is important to keep CSS organized with the components. It was lazy of me to place all of it in one place (app.css), and became more difficult for me to find prior CSS I had applied to elements.
