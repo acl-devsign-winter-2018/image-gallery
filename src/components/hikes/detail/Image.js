@@ -12,7 +12,7 @@ export default class Image {
 
   render() {
     const dom = template.clone();
-    dom.querySelector('img').src = getUrl(this.src, 'c_scale,w_200'); //TODO: change sizing
+    dom.querySelector('img').src = getUrl(this.src, 'c_scale,w_400,bo_2px_solid_rgb:385432');
     dom.querySelector('button').addEventListener('click', () => {
       this.onRemove();
     });

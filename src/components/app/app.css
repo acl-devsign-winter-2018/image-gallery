@@ -160,6 +160,29 @@ main {
   }
 }
 
+#hikes-content {
+  figure, .hike-image{
+    position: relative;
+    min-width: 250px;
+    .remove {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0,0,0,.7);
+      border: none;
+      color: $splash-font;
+    }
+    figcaption {
+      position: absolute;
+      padding-left: .2rem;
+      width: 100%;
+      padding-bottom: .2rem;
+      background-color: rgba(0,0,0,.6);
+      color: $splash-font;
+    }
+  }
+}
+
 button {
   margin: .5rem;
   padding: 5px 20px;
@@ -189,6 +212,25 @@ footer {
   display: none;
 }
 
+.upload {
+  div {
+    margin-top: 1rem;
+    input[name="file"] {
+      margin: .5rem auto;
+      padding: 5px 20px;
+      max-width: 250px;
+      background-color: #64825D;
+      border: 2px solid #385432;
+      font-weight: bold;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: .5rem;
+      display: block;
+    }
+  }
+}
+
 @media (min-width:600px) {
   main .hike-list {
     display: grid;
@@ -198,6 +240,8 @@ footer {
 
   .images ul {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -212,8 +256,15 @@ footer {
   }
   #add-hike {
     display: inherit;
+    border: 2px solid $headfoot;
+    padding: .5rem;
     grid-column-end: span 1;
     order: -1;
+    form {
+      input, textarea {
+        margin-bottom: 2rem;
+      }
+    }
     .buttons button[type="button"] {
       display: none;
     }

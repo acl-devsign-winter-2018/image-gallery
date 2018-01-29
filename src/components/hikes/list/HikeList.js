@@ -38,7 +38,7 @@ export default class HikeList {
       map.get(data.key).component.update(data.val());
     });
 
-    dom.querySelector('#add-hike').appendChild(new AddHike().render()); //TODO: check if correct? must give on add event?
+    dom.querySelector('#add-hike').appendChild(new AddHike().render());
 
     return dom;
   }
