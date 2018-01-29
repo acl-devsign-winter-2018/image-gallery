@@ -1,4 +1,5 @@
-<section class="upload">
+<button id="add-image">Add an Image</button>
+<section class="upload hidden">
   <h3>Upload an image</h3>
   <div>
     <label for="file">Via file:</label>
@@ -7,7 +8,8 @@
   <div>
     <form>
       <label for="url">Via url:</label>
-      <input name="url" type="text">
+      <input name="url" type="text" required>
+      <button id="cancel-upload" type="button">Cancel</button>
       <button type="submit">Add</button>
     </form>
   </div>

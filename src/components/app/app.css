@@ -7,6 +7,7 @@
   "main"
   "footer";
   grid-template-rows: auto 1fr auto;
+  hyphens: auto;
 }
 
 #header { grid-area: header; } 
@@ -18,9 +19,11 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  ul {
+    margin-right: 1.2rem;
+  }
   nav a {
     color: $splash-font;
-    margin-right: .5rem;
     &:hover {
       text-decoration: underline;
     }
@@ -29,7 +32,7 @@ header {
     color: $splash-font;
     display: flex;
     align-items: baseline;
-    font-size: $fluidFontSize;
+    font-size: 1.2rem;
     font-family: $header-font;
   }
   span {
@@ -38,7 +41,7 @@ header {
   }
 }
 
-#main {
+main {
   color: $font;
   background-color: $background;
   section {
@@ -47,7 +50,7 @@ header {
   }
   #hikes-section {
     margin-top: 1.5rem;
-    font-size: $fluidFontSize;
+    font-size: 1.8rem;
     font-family: $header-font;
     text-align: center;
   }
@@ -60,6 +63,31 @@ header {
       margin: 1rem auto;
     }
   }
+}
+
+.breadcrumbs {
+  margin-bottom: .7rem;
+}
+
+.hike-detail {
+  h2 {
+    font-family: $header-font;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  h3 {
+    margin-bottom: .5rem;
+  }
+  p {
+    font-size: $fluidFontSize;
+    text-align: justify;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  margin: inherit;
 }
 
 #splash {
@@ -93,6 +121,38 @@ header {
   display: none;
 }
 
+#hike-add-form {
+  display: flex;
+  flex-direction: column;
+  fieldset {
+    font-weight: bold;
+    font-size: $fluidFontSize;
+    margin-bottom: 1rem;
+  }
+  input, 
+  textarea {
+    margin-bottom: 1rem;
+  }
+  textarea {
+    height: 50px;
+  }
+  label {
+    margin-bottom: .5rem;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+button {
+  margin: .5rem;
+  padding: 5px 20px;
+  background-color: $box;
+  border: 2px solid $headfoot;
+  font-weight: bold;
+}
+
 footer {
   color: $splash-font;
   text-align: center;
@@ -117,10 +177,6 @@ footer {
 @media (min-width:800px) {
   #add-hike {
     display: inherit;
-    form {
-      display: flex;
-      flex-direction: column;
-    }
   }
   #nav {
     display: none;

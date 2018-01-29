@@ -25,7 +25,7 @@ export default class hikeDetail {
       header.textContent = hike.name;
       location.textContent = hike.location;
       description.textContent = hike.description;
-      name.textContent = hike.name;
+      name.textContent = ` ${hike.name}`;
     });
 
     this.images = new Images(this.key);

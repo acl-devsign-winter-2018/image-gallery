@@ -19,17 +19,9 @@ export default class App {
     window.addEventListener('hashchange', this.hashChange);
   }
 
-  setPage() {
+  setPage() { //TODO: fix header hide on some page refreshes.
     const routes = window.location.hash.split('/');
     const page = routes[0];
-    if(page === this.page) return;
-
-    if(this.pageComponent) this.pageComponent.unrender();
-    this.page = page;
-    const Component = map.get(this.page) || Home;
-    this.pageComponent = new Component();
-    removeChildren(this.main);
-    this.main.appendChild(this.pageComponent.render());
     if(window.location.hash === '#hikes') {
       this.footer.classList.remove('hidden');
       this.header.classList.remove('hidden');
@@ -38,6 +30,15 @@ export default class App {
       this.footer.classList.add('hidden');
       this.header.classList.add('hidden');
     }
+    if(page === this.page) return;
+
+    if(this.pageComponent) this.pageComponent.unrender();
+    this.page = page;
+    const Component = map.get(this.page) || Home;
+    this.pageComponent = new Component();
+    removeChildren(this.main);
+    this.main.appendChild(this.pageComponent.render());
+    
   }
 
   render() {

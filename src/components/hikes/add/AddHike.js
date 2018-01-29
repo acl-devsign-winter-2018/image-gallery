@@ -32,9 +32,7 @@ export default class AddHike {
       event.preventDefault();
       this.handleSubmit(event.target);
     });
-
-    //TODO: add event listner to window for viewport size. if one size and hash is one thing, have the form hidden, vs another. Possible?
-
+    
     dom.querySelector('button[type=button]').addEventListener('click', event => {
       event.preventDefault();
       if(window.location.hash == '#hikes') this.form.reset();

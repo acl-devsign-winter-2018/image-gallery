@@ -45,6 +45,23 @@ export default class Images {
 
   render() {
     const dom = template.clone();
+
+    const uploadForm = dom.querySelector('.upload');
+    const addImageButton = dom.querySelector('#add-image');
+    const cancelUploadButton = dom.querySelector('#cancel-upload');
+
+    addImageButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      uploadForm.classList.remove('hidden');
+      addImageButton.classList.add('hidden');
+    });
+
+    cancelUploadButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      uploadForm.classList.add('hidden');
+      addImageButton.classList.remove('hidden');
+    });
+
     
     this.fileInput = dom.querySelector('input[type=file]');
     this.fileInput.addEventListener('change', event => {
@@ -57,6 +74,7 @@ export default class Images {
     embedForm.addEventListener('submit', event => {
       event.preventDefault();
       this.handleEmbed(event.target.elements.url.value);
+      embedForm.reset();
     });
 
     const ul = dom.querySelector('ul');
