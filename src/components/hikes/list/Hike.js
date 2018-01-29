@@ -27,7 +27,7 @@ export default class Hike {
     this.update(this.hike);
     
     this.onValue = this.hikeImages.on('child_added', data => {
-      this.image.src = getUrl(data.val(), 'e_sepia:80,c_scale,w_75'); //TODO: change cloudinary settings for uploaded pics
+      this.image.src = getUrl(data.val(), 'c_scale,w_75'); //TODO: change cloudinary settings for uploaded pics
     });
 
     return dom;

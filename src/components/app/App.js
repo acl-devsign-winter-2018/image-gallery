@@ -19,14 +19,14 @@ export default class App {
     window.addEventListener('hashchange', this.hashChange);
   }
 
-  setPage() { //TODO: fix header hide on some page refreshes.
+  setPage() {
     const routes = window.location.hash.split('/');
     const page = routes[0];
-    if(window.location.hash === '#hikes') {
+    if(window.location.hash !== '#home') {
       this.footer.classList.remove('hidden');
       this.header.classList.remove('hidden');
     }
-    if(window.location.hash === '#home') {
+    if(window.location.hash === '#home' || window.location.hash === '') {
       this.footer.classList.add('hidden');
       this.header.classList.add('hidden');
     }
