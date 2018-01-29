@@ -70,6 +70,7 @@ main {
 }
 
 .hike-detail {
+  text-align: center;
   h2 {
     font-family: $header-font;
     margin-bottom: 1rem;
@@ -81,6 +82,8 @@ main {
   p {
     font-size: $fluidFontSize;
     text-align: justify;
+    max-width: 650px;
+    margin: 1.4rem auto;
   }
 }
 
@@ -91,7 +94,14 @@ main {
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin: 1rem auto;
+    li {
+      margin: .7rem;
+    }
+  }
+  button {
     margin: 0 auto;
+    padding: 5px 30px;
   }
 }
 
@@ -185,6 +195,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
+
+  .images ul {
+    flex-direction: row;
+  }
 }
 
 @media (min-width:800px) {
@@ -210,4 +224,5 @@ footer {
   #nav {
     display: none;
   }
+
 }
