@@ -161,6 +161,9 @@ main {
 }
 
 #hikes-content {
+  figure:hover {
+    transform: scale(1.1);
+  }
   figure, .hike-image{
     position: relative;
     min-width: 250px;
@@ -171,6 +174,7 @@ main {
       background-color: rgba(0,0,0,.7);
       border: none;
       color: $splash-font;
+      box-shadow: none;
     }
     figcaption {
       position: absolute;
@@ -189,6 +193,14 @@ button {
   background-color: $box;
   border: 2px solid $headfoot;
   font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 0 $headfoot;
+
+  &:active {
+    box-shadow: 0 2px 0 $headfoot;
+    transform: translateY(3px);
+  }
+  
 }
 
 footer {
