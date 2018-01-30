@@ -1,5 +1,6 @@
 /* eslint-env node */
 const HtmlPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   // our starting point for our javascript
