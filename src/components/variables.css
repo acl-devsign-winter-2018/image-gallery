@@ -1,0 +1,15 @@
+$accent: #b36969;
+$link: #585857;
+$darklink: #007BC2;
+$lightgray: #eeeeee;
+$darkgray: #585857;
+$white: #ffffff;
+$gray: #E0E0E0;
+$black: #000000;
+
+$maxViewportSize: 1280px;
+$padding: 2rem;
+
+aside {
+  color: #b36969;
+}
